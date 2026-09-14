@@ -1,5 +1,5 @@
 /* =========================================================
-   NovaStream — Design tokens
+   UniTV — Design tokens
    ========================================================= */
 :root {
   --bg: #0b0b0b;
@@ -177,12 +177,6 @@ button { font-family: inherit; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.hero__kicker {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  margin: 0 0 18px;
-}
-
 .hero__title {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
   font-weight: 800;
@@ -226,11 +220,19 @@ section { padding: 90px 0; }
 }
 
 .catalog__card {
-  width: 200px;
+  width: 180px;
+  aspect-ratio: 2 / 3;
   border-radius: var(--radius-sm);
   overflow: hidden;
   border: 1px solid var(--border);
+  background-color: var(--surface-2);
   transition: transform .25s ease, border-color .25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
 }
 
 .catalog__card:hover {
@@ -239,7 +241,8 @@ section { padding: 90px 0; }
 }
 
 .catalog__card img {
-  aspect-ratio: 2/3;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
