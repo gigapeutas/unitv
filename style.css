@@ -23,7 +23,10 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth; 
+  overflow-x: hidden; /* Trava a largura da tela */
+}
 
 body {
   margin: 0;
@@ -33,6 +36,8 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* Impede que o carrossel crie scroll horizontal na página */
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
